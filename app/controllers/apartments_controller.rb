@@ -1,5 +1,6 @@
 class ApartmentsController < ApplicationController
 before_action :apt_params, only: [:create]
+before_action :authenticate_user
 
     def create
       apartment = Apartment.new(apt_params)
@@ -12,7 +13,7 @@ before_action :apt_params, only: [:create]
     end
 
     private
-    
+
     def apt_params
       params.require(:apartment).permit(:street, :city, :zip, :state, :country)
     end

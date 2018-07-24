@@ -42,3 +42,14 @@ end
 contact_attributes.each do |attributes|
     Contact.create(attributes)
 end
+
+
+
+user_attributes = [{
+    name: "Carlos",
+    email: "gmail@gmail.com",
+    password_digest: "password"
+}]
+user_attributes.each do |attributes|
+    User.create(attributes)
+end
