@@ -1,6 +1,7 @@
 class ApartmentsController < ApplicationController
 before_action :apt_params, only: [:create]
 before_action :authenticate_user
+load_and_authorize_resource
 
     def create
       apartment = Apartment.new(apt_params)

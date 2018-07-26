@@ -48,6 +48,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (10.0.2)
+    cancancan (2.2.0)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     diff-lcs (1.3)
@@ -57,6 +58,9 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
+    jbuilder (2.7.0)
+      activesupport (>= 4.2.0)
+      multi_json (>= 1.2)
     jwt (1.5.6)
     knock (2.1.1)
       bcrypt (~> 3.1)
@@ -79,6 +83,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     msgpack (1.2.4)
+    multi_json (1.13.1)
     nio4r (2.3.1)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
@@ -116,6 +121,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rolify (5.2.0)
     rspec-core (3.7.1)
       rspec-support (~> 3.7.0)
     rspec-expectations (3.7.0)
@@ -161,12 +167,15 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   byebug
+  cancancan
+  jbuilder (~> 2.5)
   knock
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rack-cors
   rails (~> 5.2.0)
+  rolify
   rspec-rails
   spring
   spring-watcher-listen (~> 2.0.0)
